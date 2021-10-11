@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PrimitivesInformationAppl {
 
 	public static void main(String[] args) {
-		Scanner scanner  = new Scanner(System.in); //input data from the console
+		Scanner scanner  = new Scanner(System.in); 
 		while(true) {
 			System.out.println("enter integer primitive type (long, int, short, char, byte or exit)");
 			String line = scanner.nextLine();
@@ -20,26 +20,24 @@ public class PrimitivesInformationAppl {
 	private static void printInformationByType(String type) {
 		switch(type) {
 		  case "long":
-			  System.out.println("long");
+			  System.out.println("long: ");
 			  printLongInfo();
 		    break;
-		  case "integer":
-			  System.out.println("integer");
+		  case "int":
+			  System.out.println("integer: ");
 			  printIntInfo();
 		    break;
 		  case "short":
-			  System.out.println("short");
+			  System.out.println("short: ");
 			  printShortInfo();
 			    break;
 		  case "char":
-			  System.out.println("char");
+			  System.out.println("char: ");
 			  printCharInfo();
 			    break;
 		  case "byte":
-			  System.out.println("byte");
+			  System.out.println("byte: ");
 			  printByteInfo();
-			    break;
-		  case "exit":
 			    break;
 		  default:
 		    System.out.println("Wrong primitive type");
