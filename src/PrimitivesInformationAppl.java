@@ -1,3 +1,7 @@
+/*  V.R.
+ *  Generally it looks very good
+ * 
+ */
 import java.util.Scanner;
 
 //Application for printing out the useful information about Java integer primitives
@@ -51,6 +55,11 @@ public class PrimitivesInformationAppl {
 			minValue = (byte) (minValue * 2);
 			nBits = nBits + 1;
 		}
+		/* V.R.
+		 * It seems to me that the following is better:
+		 * byte maxValue = (byte) (minValue - 1);
+		 * The same is right for other places with maxValue
+		 */
 		byte maxValue = 1;
 		maxValue = (byte) (minValue - 1);
 		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
