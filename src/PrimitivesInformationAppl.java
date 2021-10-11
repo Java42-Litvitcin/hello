@@ -25,18 +25,23 @@ public class PrimitivesInformationAppl {
 		switch(type) {
 		  case "long":
 			  System.out.println("long");
+			  printLongInfo();
 		    break;
 		  case "integer":
 			  System.out.println("integer");
+			  printIntInfo();
 		    break;
 		  case "short":
 			  System.out.println("short");
+			  printShortInfo();
 			    break;
 		  case "char":
 			  System.out.println("char");
+			  printCharInfo();
 			    break;
 		  case "byte":
 			  System.out.println("byte");
+			  printByteInfo();
 			    break;
 		  default:
 		    System.out.println("type is not exist");
@@ -51,6 +56,38 @@ public class PrimitivesInformationAppl {
 		maxValue = (char) (minValue - 1);
 		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
 		
+		
+	}
+
+	private static void printByteInfo() {
+		byte minValue = 1; 
+		int nBits = 1;
+		while(minValue > 0) {
+			minValue = (byte) (minValue * 2);//compiler casts minValue to int, multiplies on 2 
+			nBits = nBits + 1;
+		}
+		byte maxValue = 1;
+		maxValue = (byte) (minValue - 1);
+		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
+	}
+
+	private static void printCharInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void printShortInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void printIntInfo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void printLongInfo() {
+		// TODO Auto-generated method stub
 		
 	}
 
