@@ -44,26 +44,15 @@ public class PrimitivesInformationAppl {
 			  printByteInfo();
 			    break;
 		  default:
-		    System.out.println("type is not exist");
+		    System.out.println("Wrong primitive type");
 		}
-		char minValue = 1; 
-		char maxValue = 1;
-		int nBits = 1;
-		while(minValue > 0) {
-			minValue = (char) (minValue * 2);//compiler casts minValue to int, multiplies on 2 
-			nBits = nBits + 1;
-		}
-		maxValue = (char) (minValue - 1);
-		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
-		
-		
 	}
 
 	private static void printByteInfo() {
 		byte minValue = 1; 
 		int nBits = 1;
 		while(minValue > 0) {
-			minValue = (byte) (minValue * 2);//compiler casts minValue to int, multiplies on 2 
+			minValue = (byte) (minValue * 2);
 			nBits = nBits + 1;
 		}
 		byte maxValue = 1;
@@ -72,22 +61,54 @@ public class PrimitivesInformationAppl {
 	}
 
 	private static void printCharInfo() {
-		// TODO Auto-generated method stub
+		char minValue = 1; 
+		int nBits = 1;
+		while(minValue > 0) {
+			minValue = (char) (minValue * 2);
+			nBits = nBits + 1;
+		}
+		char maxValue = 1;
+		maxValue = (char) (minValue - 1);
+		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
 		
 	}
 
 	private static void printShortInfo() {
-		// TODO Auto-generated method stub
+		short minValue = 1; 
+		int nBits = 1;
+		while(minValue > 0) {
+			minValue = (short) (minValue * 2); 
+			nBits = nBits + 1;
+		}
+		short maxValue = 1;
+		maxValue = (short) (minValue - 1);
+		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
 		
 	}
 
 	private static void printIntInfo() {
-		// TODO Auto-generated method stub
+		int minValue = 1; 
+		int nBits = 1;
+		while(minValue > 0) {
+			minValue = (int) (minValue * 2); 
+			nBits = nBits + 1;
+		}
+		int maxValue = 1;
+		maxValue = (int) (minValue - 1);
+		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
 		
 	}
 
 	private static void printLongInfo() {
-		// TODO Auto-generated method stub
+		long minValue = 1; 
+		int nBits = 1;
+		while(minValue > 0) {
+			minValue = (long) (minValue * 2); 
+			nBits = nBits + 1;
+		}
+		long maxValue = 1;
+		maxValue = (long) (minValue - 1);
+		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
 		
 	}
 
