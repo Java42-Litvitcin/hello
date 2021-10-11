@@ -18,10 +18,29 @@ public class PrimitivesInformationAppl {
 	}
 
 	private static void printInformationByType(String type) {
-		// your homework should contain switch by the given type (long, int, short, char, byte)
+		// your homework should contain switch by the given type (long, integer, short, char, byte)
 		//for default there should be out: Wrong primitive type
 		// for each type there should be an appropriate method of printing information of the type
 		//for example, printCharInformation - method printing out the info about type "char"
+		switch(type) {
+		  case "long":
+			  System.out.println("long");
+		    break;
+		  case "integer":
+			  System.out.println("integer");
+		    break;
+		  case "short":
+			  System.out.println("short");
+			    break;
+		  case "char":
+			  System.out.println("char");
+			    break;
+		  case "byte":
+			  System.out.println("byte");
+			    break;
+		  default:
+		    System.out.println("type is not exist");
+		}
 		char minValue = 1; 
 		char maxValue = 1;
 		int nBits = 1;
