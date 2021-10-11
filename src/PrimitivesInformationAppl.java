@@ -6,7 +6,7 @@ public class PrimitivesInformationAppl {
 	public static void main(String[] args) {
 		Scanner scanner  = new Scanner(System.in); //input data from the console
 		while(true) {
-			System.out.println("enter integer primitive type (long, int, short, char, byte or exit");
+			System.out.println("enter integer primitive type (long, int, short, char, byte or exit)");
 			String line = scanner.nextLine();
 			if (line.equals("exit")) {
 				break;
@@ -18,10 +18,6 @@ public class PrimitivesInformationAppl {
 	}
 
 	private static void printInformationByType(String type) {
-		// your homework should contain switch by the given type (long, integer, short, char, byte)
-		//for default there should be out: Wrong primitive type
-		// for each type there should be an appropriate method of printing information of the type
-		//for example, printCharInformation - method printing out the info about type "char"
 		switch(type) {
 		  case "long":
 			  System.out.println("long");
@@ -42,6 +38,8 @@ public class PrimitivesInformationAppl {
 		  case "byte":
 			  System.out.println("byte");
 			  printByteInfo();
+			    break;
+		  case "exit":
 			    break;
 		  default:
 		    System.out.println("Wrong primitive type");
@@ -108,7 +106,7 @@ public class PrimitivesInformationAppl {
 		}
 		long maxValue = 1;
 		maxValue = (long) (minValue - 1);
-		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (int)minValue, (int)maxValue, nBits / 8);
+		System.out.printf("minimal value is %d, maximal value is %d, number of bytes is %d\n", (long)minValue, (long)maxValue, nBits / 8);
 		
 	}
 
